@@ -1,4 +1,4 @@
-package exemplo.livro1.controller;
+package exemplo.curso1.controller;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
@@ -12,10 +12,10 @@ import javafx.stage.Stage;
 
 public class MenusController {
     @FXML
-    private MenuItem menuAutorInclui;
+    private MenuItem menuEstudanteInclui;
 
     @FXML
-    private MenuItem menuAutorAltera;
+    private MenuItem menuEstudanteAltera;
 
     @FXML
     private MenuItem telaVazia;
@@ -30,12 +30,12 @@ public class MenusController {
     @FXML
     void incluiOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/incluiAutor.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/IncluiEstudante.fxml"));
             Parent root = loader.load();
             Stage newStage = new Stage();
             Scene newScene = new Scene(root);
             newStage.setScene(newScene);
-            newStage.setTitle("Autor");
+            newStage.setTitle("Estudante");
             newStage.setResizable(false);
             newStage.show();
         } catch (IOException e) {
@@ -50,7 +50,7 @@ public class MenusController {
             Stage newStage = new Stage();
             Scene newScene = new Scene(root);
             newStage.setScene(newScene);
-            newStage.setTitle("Autor");
+            newStage.setTitle("Estudante");
             newStage.setResizable(false);
             newStage.show();
         } catch (IOException e) {
@@ -74,4 +74,3 @@ public class MenusController {
         }
     }
 }
-

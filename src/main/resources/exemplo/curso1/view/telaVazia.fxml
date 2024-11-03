@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exemplo.livro1.controller.TelaVaziaController">
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exemplo.curso1.controller.TelaVaziaController">
     <children>
         <Label fx:id="lblNomeTela" alignment="CENTER_RIGHT" text="Construir Módulo">
             <font>

@@ -1,4 +1,4 @@
-package exemplo.livro1.controller;
+package exemplo.curso1.controller;
 
 import java.sql.*;
 import javafx.event.ActionEvent;
@@ -10,10 +10,10 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
-import exemplo.livro1.model.Autor;
-import exemplo.livro1.dao.AutorDAO;
+import exemplo.curso1.model.Estudante;
+import exemplo.curso1.dao.EstudanteDAO;
 
-public class IncluiAutorController {
+public class IncluiEstudanteController {
 
     @FXML
     private Button btnConf;
@@ -27,21 +27,21 @@ public class IncluiAutorController {
 
     @FXML
     private void btnConfOnAction(ActionEvent event) {
-        Autor autor = new Autor();
-        autor.setNome(txtNomEst.getText());
+        Estudante estudante = new Estudante();
+        estudante.setNome(txtNomEst.getText());
 
-        AutorDAO autorDAO = new AutorDAO();
+        EstudanteDAO estudanteDAO = new EstudanteDAO();
         try {
-            autorDAO.inserir(autor);
+            estudanteDAO.inserir(estudante);
             Alert alert;
             alert = new Alert(AlertType.INFORMATION, "Você clicou no botão Confirmar", ButtonType.OK);
-            alert.setTitle("Autor cadastrado com sucesso!");
+            alert.setTitle("Estudante cadastrado com sucesso!");
             alert.setHeaderText("Informação");
             alert.show();
         } catch (SQLException e1) {
             Alert alert;
             alert = new Alert(AlertType.INFORMATION, "Você clicou no botão Cancelar", ButtonType.OK);
-            alert.setTitle("Autor não foi cadastrado com sucesso!");
+            alert.setTitle("Estudante não foi cadastrado com sucesso!");
             alert.setHeaderText("Informação");
             alert.show();
             e1.printStackTrace();
@@ -56,4 +56,3 @@ public class IncluiAutorController {
         stageAtual.close();
     }
 }
-

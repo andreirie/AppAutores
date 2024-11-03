@@ -1,4 +1,4 @@
-package exemplo.livro1.controller;
+package exemplo.curso1.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,4 +21,3 @@ public class TelaVaziaController {
         ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
     }
 }
-

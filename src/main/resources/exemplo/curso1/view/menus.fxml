@@ -11,10 +11,10 @@
     <children>
         <MenuBar>
             <menus>
-                <Menu text="Autor">
+                <Menu text="Estudante">
                     <items>
-                        <MenuItem fx:id="menuAutorInclui" onAction="#incluiOnAction" text="Inclui" />
-                        <MenuItem fx:id="menuAutorAltera" onAction="#alteraOnAction" text="Altera" />
+                        <MenuItem fx:id="menuEstudanteInclui" onAction="#incluiOnAction" text="Inclui" />
+                        <MenuItem fx:id="menuEstudanteAltera" onAction="#alteraOnAction" text="Altera" />
                     </items>
                 </Menu>
                 <Menu text="Professor">

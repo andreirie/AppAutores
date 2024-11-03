@@ -1,4 +1,4 @@
-module exemplo.livro1 {
+module exemplo.curso1 {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,16 +6,16 @@ module exemplo.livro1 {
     requires org.kordamp.bootstrapfx.core;
     requires transitive java.sql;
 
-    opens exemplo.livro1.controller to javafx.fxml;
-    exports exemplo.livro1.controller;
+    opens exemplo.curso1.controller to javafx.fxml;
+    exports exemplo.curso1.controller;
 
-    opens exemplo.livro1.model to javafx.fxml;
-    exports exemplo.livro1.model;
+    opens exemplo.curso1.model to javafx.fxml;
+    exports exemplo.curso1.model;
 
-    opens exemplo.livro1.main to javafx.fxml;
-    exports exemplo.livro1.main;
+    opens exemplo.curso1.main to javafx.fxml;
+    exports exemplo.curso1.main;
 
-    opens exemplo.livro1.dao to javafx.fxml;
-    exports exemplo.livro1.dao;
+    opens exemplo.curso1.dao to javafx.fxml;
+    exports exemplo.curso1.dao;
 
 }

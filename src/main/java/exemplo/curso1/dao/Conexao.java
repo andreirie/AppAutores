@@ -1,9 +1,8 @@
-package exemplo.livro1.dao;
+package exemplo.curso1.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 public class Conexao implements IConst {
     public static Connection getConexao(String stringDeConexao, String usuario, String senha) {
         try {
@@ -13,4 +12,3 @@ public class Conexao implements IConst {
         }
     }
 }
-

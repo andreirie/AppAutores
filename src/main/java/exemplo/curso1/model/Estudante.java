@@ -1,15 +1,15 @@
-package exemplo.livro1.model;
+package exemplo.curso1.model;
 
-public class Autor {
-    private int autorID;
+public class Estudante {
+    private int estudanteID;
     private String nome;
     private int idade;
 
-    public Autor() {
+    public Estudante() {
 
     }
-    public Autor(int autorID, String nome, int idade) {
-        this.autorID = autorID;
+    public Estudante(int estudanteID, String nome, int idade) {
+        this.estudanteID = estudanteID;
         this.nome = nome;
         this.idade = idade;
     }
@@ -22,16 +22,16 @@ public class Autor {
         this.idade = idade;
     }
 
-    public Autor(int idade) {
+    public Estudante(int idade) {
         this.idade = idade;
     }
 
-    public int getAutorID() {
-        return autorID;
+    public int getEstudanteID() {
+        return estudanteID;
     }
 
-    public void setAutorID(int autorID) {
-        this.autorID = autorID;
+    public void setEstudanteID(int estudanteID) {
+        this.estudanteID = estudanteID;
     }
 
     public String getNome() {
@@ -44,11 +44,10 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "Autor{" +
-                "ID=" + autorID +
+        return "Estudante{" +
+                "estudanteID=" + estudanteID +
                 ", nome='" + nome + '\'' +
                 ", idade=" + idade +
                 '}';
     }
 }
-
