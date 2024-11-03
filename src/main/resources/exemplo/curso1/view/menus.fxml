@@ -26,7 +26,7 @@
         </MenuBar>
         <ImageView fitHeight="374.0" fitWidth="600.0">
             <image>
-                <Image url="@../image/estudantes.png" />
+                <Image url="@../image/UNICENTRO.jpg" />
             </image>
         </ImageView>
     </children>
