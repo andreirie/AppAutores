@@ -14,6 +14,20 @@ public class ProfessorDAO implements IProfessor, IConst {
             pstmt.setString(1, professor.getNome());
             pstmt.setInt(2, professor.getIdade());
             pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void excluir(int id) throws SQLException {
+        sql = "DELETE FROM estudante WHERE professor_id = ?";
+
+        try (Connection conexao = Conexao.getConexao(Conexao.stringDeConexao, Conexao.usuario, Conexao.senha);
+             PreparedStatement pstmt = conexao.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 }

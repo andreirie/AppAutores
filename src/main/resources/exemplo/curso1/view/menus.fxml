@@ -15,12 +15,14 @@
                     <items>
                         <MenuItem fx:id="menuEstudanteInclui" onAction="#incluiOnAction" text="Inclui" />
                         <MenuItem fx:id="menuEstudanteAltera" onAction="#alteraOnAction" text="Altera" />
+                        <MenuItem fx:id="menuEstudanteExclui" onAction="#excluiOnAction" text="Exclui" />
                     </items>
                 </Menu>
                 <Menu text="Professor">
                     <items>
-                        <MenuItem fx:id="menuProfessorInclui" onAction="#inclui1OnAction" text="Inclui" />
+                        <MenuItem fx:id="menuProfessorInclui" onAction="#incluiPOnAction" text="Inclui" />
                         <MenuItem fx:id="menuProfessorAltera" onAction="#altera1OnAction" text="Altera" />
+                        <MenuItem fx:id="menuProfessorExclui" onAction="#excluiPOnAction" text="Exclui" />
                     </items>
                 </Menu>
             </menus>

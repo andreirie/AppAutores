@@ -46,7 +46,7 @@ public class MenusController {
         }
     }
     @FXML
-    void inclui1OnAction(ActionEvent event) {
+    void incluiPOnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/IncluiProfessor.fxml"));
             Parent root = loader.load();
@@ -60,6 +60,37 @@ public class MenusController {
             e.printStackTrace();
         }
     }
+    @FXML
+    void excluiOnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/ExcluiEstudante.fxml"));
+            Parent root = loader.load();
+            Stage newStage = new Stage();
+            Scene newScene = new Scene(root);
+            newStage.setScene(newScene);
+            newStage.setTitle("Estudante");
+            newStage.setResizable(false);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void excluiPOnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/ExcluiProfessor.fxml"));
+            Parent root = loader.load();
+            Stage newStage = new Stage();
+            Scene newScene = new Scene(root);
+            newStage.setScene(newScene);
+            newStage.setTitle("Professor");
+            newStage.setResizable(false);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @FXML
     void alteraOnAction(ActionEvent event) {
         try {
