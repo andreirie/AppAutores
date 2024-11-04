@@ -15,7 +15,7 @@ public class MenusController {
     private MenuItem menuEstudanteInclui;
 
     @FXML
-    private MenuItem menuEstudanteAltera;
+    private MenuItem menuEstudanteListaAltera;
 
     @FXML
     private MenuItem telaVazia;
@@ -61,9 +61,9 @@ public class MenusController {
         }
     }
     @FXML
-    void alteraOnAction(ActionEvent event) {
+    void listaAlteraOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/TelaVazia.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/listaEstudante.fxml"));
             Parent root = loader.load();
             Stage newStage = new Stage();
             Scene newScene = new Scene(root);
@@ -76,9 +76,24 @@ public class MenusController {
         }
     }
     @FXML
-    void altera1OnAction(ActionEvent event) {
+    void alteraOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/TelaVazia.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/alteraEstudante.fxml"));
+            Parent root = loader.load();
+            Stage newStage = new Stage();
+            Scene newScene = new Scene(root);
+            newStage.setScene(newScene);
+            newStage.setTitle("Estudante");
+            newStage.setResizable(false);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    void listaAltera1OnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/ListaProfessor.fxml"));
             Parent root = loader.load();
             Stage newStage = new Stage();
             Scene newScene = new Scene(root);
