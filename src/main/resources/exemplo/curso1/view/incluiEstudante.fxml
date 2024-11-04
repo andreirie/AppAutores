@@ -25,6 +25,16 @@
             </padding>
         </Label>
         <TextField fx:id="txtNomEst" prefHeight="25.0" prefWidth="547.0" />
+        <Label fx:id="lblIdadeEstudante" />
+        <Label text="Idade">
+            <font>
+                <Font size="15.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+        </Label>
+        <TextField fx:id="txtIdadEst" prefHeight="25.0" prefWidth="547.0" />
         <HBox prefHeight="37.0" prefWidth="600.0" spacing="10.0">
             <children>
                 <Button fx:id="btnConf" onAction="#btnConfOnAction" prefHeight="37.0" prefWidth="74.0" text="Confirmar">

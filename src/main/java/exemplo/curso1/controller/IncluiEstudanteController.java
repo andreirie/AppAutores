@@ -22,6 +22,9 @@ public class IncluiEstudanteController {
     private TextField txtNomEst;
 
     @FXML
+    private TextField txtIdadEst;
+
+    @FXML
     public void initialize() {
     }
 
@@ -29,6 +32,7 @@ public class IncluiEstudanteController {
     private void btnConfOnAction(ActionEvent event) {
         Estudante estudante = new Estudante();
         estudante.setNome(txtNomEst.getText());
+        estudante.setIdade(Integer.parseInt(txtIdadEst.getText()));
 
         EstudanteDAO estudanteDAO = new EstudanteDAO();
         try {

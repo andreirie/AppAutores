@@ -21,6 +21,9 @@ public class MenusController {
     private MenuItem telaVazia;
 
     @FXML
+    private MenuItem menuProfessorInclui;
+
+    @FXML
     private Stage stage;
     @FXML
     private Scene scene;
@@ -43,6 +46,21 @@ public class MenusController {
         }
     }
     @FXML
+    void inclui1OnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/IncluiProfessor.fxml"));
+            Parent root = loader.load();
+            Stage newStage = new Stage();
+            Scene newScene = new Scene(root);
+            newStage.setScene(newScene);
+            newStage.setTitle("Professor");
+            newStage.setResizable(false);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
     void alteraOnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/TelaVazia.fxml"));
@@ -58,9 +76,24 @@ public class MenusController {
         }
     }
     @FXML
-    private void telaVaziaOnAction(ActionEvent event) {
+    void altera1OnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/TelaVazia.fxml"));
+            Parent root = loader.load();
+            Stage newStage = new Stage();
+            Scene newScene = new Scene(root);
+            newStage.setScene(newScene);
+            newStage.setTitle("Professor");
+            newStage.setResizable(false);
+            newStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void telaVaziaOnAction(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/exemplo/curso1/view/incluiProfessor.fxml"));
             Parent root = loader.load();
             Stage newStage = new Stage();
             Scene newScene = new Scene(root);

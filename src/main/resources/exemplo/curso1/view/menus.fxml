@@ -19,7 +19,8 @@
                 </Menu>
                 <Menu text="Professor">
                     <items>
-                        <MenuItem fx:id="telaVazia" onAction="#telaVaziaOnAction" text="Tela Vazia" />
+                        <MenuItem fx:id="menuProfessorInclui" onAction="#inclui1OnAction" text="Inclui" />
+                        <MenuItem fx:id="menuProfessorAltera" onAction="#altera1OnAction" text="Altera" />
                     </items>
                 </Menu>
             </menus>

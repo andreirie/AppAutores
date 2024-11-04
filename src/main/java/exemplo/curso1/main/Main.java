@@ -16,7 +16,7 @@ public class Main extends Application {
         // carrega o arquivo fxml e constrói a árvore de objetos da interface gráfica
         Parent root = principal.load();
         Scene scene = new Scene(root);
-        stage.setTitle("Estudantes");
+        stage.setTitle("Estudantes e Professores");
         stage.setScene(scene);
         // define que stage não pode ser redimensionado pelo usuário
         stage.setResizable(false);
